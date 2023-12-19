@@ -1,0 +1,205 @@
+
+/*  REGRA VISUAL  */
+
+*{
+    margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth;
+}
+
+/*  BODY  */
+
+    body{
+        font-family: Helvetica, sans-serif;
+        font-size: 22px;
+        text-align: center;
+        color: seashell;
+        background-color: rgb(0, 0, 0);
+    }
+
+    h2,
+    h3,
+    h4{
+        padding: 10px;
+        font-weight: bold;
+    }
+
+/*  HEADER  */
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 69px;
+        width: 100%;
+
+        padding: 10px;
+        border-bottom: 1px solid white;
+        background-color: black;
+        z-index: 1;
+
+        position: fixed;
+        top:0;
+    }
+
+    header img{
+        height: 50px;
+    }
+
+    a{
+        font-size: 22px;
+        display: inline-block;
+        color: rgb(190, 190, 190);
+        padding: 20px;
+
+        text-decoration: none;
+        transition: font-size 0.5s,color;
+    }
+
+    header a:hover{
+        font-size: 25px;
+        color: seashell;
+    }
+
+/*  SEÇÃO 1  */
+
+    .top{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #section0{
+        display: flex;
+        width: 1200px;
+        height: 700px;
+        background-image: url("/resources/images/2.jpg");
+        padding-top: 70px;
+    }
+
+    #section0 .section1{
+        margin: auto;
+        width: 100%;
+        background-color: black;
+    }
+
+/*  SEÇÃO 2  */
+
+    #section2{
+        height: 700px;
+        width: 1000px;
+        padding-top: 70px;
+        margin: auto;
+        
+    }    
+
+    .meio{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .item{
+        padding: 5px;
+    }
+
+    .item img{
+        height: 200px;
+        margin: 10px;
+        display: block;
+    }
+
+    .item span{
+        display: block;
+        padding: 5px;
+        font-weight: bold;
+    }
+
+    #section2 h2{
+        padding-top: 25px;
+    }
+
+/*  SEÇÃO 3  */
+
+    .termino{
+        display: flex;
+        justify-content: center;
+    }
+
+    #section3{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 600px;  
+        width: 1200px;
+    }
+
+    .fim{
+        margin-bottom: -5px;
+    }
+
+    .fim1{
+        margin: 20px;
+
+        background-color: black;
+        text-align: center;
+
+        width: 300px;
+        height: 300px;
+
+        transition: width 0.5s,color 0.5s;
+    }
+
+    .fim1 p{
+        line-height: 80px;
+    }
+
+    .fim1:hover{
+        width: 320px;
+        color: seashell;
+    }
+
+/*  RODAPÉ   */
+
+    footer{
+
+        margin-top: 5px;
+    }
+    .roda{
+        height: 200px;
+        align-content: space-around;
+    }
+    .roda h5{
+        text-align: center;
+        display: block;
+        align-content: center;
+        align-items: center;
+        line-height: 3;
+    }
+    .pe{
+        margin-left: 20px;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+
+@media only screen and (max-width:500px ){
+    header img{
+        display: none;
+    }
+    header a{
+        display: inline;
+        padding: 10px;
+        font-size: 20px;
+    }
+    #section0{
+        height: 20%;
+        background-image: none;
+        margin-top: 20px;
+    }
+    
+}
